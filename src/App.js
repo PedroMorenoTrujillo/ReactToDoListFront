@@ -1,24 +1,17 @@
-import logo from './logo.svg';
-import './App.css';
+import Sidebar from "./layout/Sidebar";
+import Dashboard from "./layout/Dashboard";
+import { Fragment } from "react";
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Fragment>
+      <div className="container-fluid d-flex vh-100 text-center">
+        <Sidebar />
+        <Dashboard/>
+      </div>
+      
+    </Fragment>
+    
   );
 }
 
